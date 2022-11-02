@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     private fun haceRegistro() {
     val email = binding.etEmail.text.toString()
     val clave = binding.etClave.text.toString()
+        
 
         auth.createUserWithEmailAndPassword( email, clave )
             .addOnCompleteListener(this) { task ->

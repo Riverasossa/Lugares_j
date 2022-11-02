@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.lugares_j.data.LugarDao
 import com.lugares_j.model.Lugar
 
 @Database(entities =[Lugar::class], version = 1, exportSchema =  false)
@@ -24,8 +25,8 @@ abstract class LugarDatabase: RoomDatabase() {
                     context.applicationContext,
                     LugarDatabase::class.java,
                     "Lugar_Database"
-                    ).build()
-                    INSTANCE=instance
+                ).build()
+                INSTANCE=instance
                 return instance
             }
         }
