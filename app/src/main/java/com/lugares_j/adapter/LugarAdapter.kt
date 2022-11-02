@@ -13,6 +13,7 @@ class LugarAdapter : RecyclerView.Adapter<LugarAdapter.LugarViewHolder>() {
     inner class LugarViewHolder(private val itemBinding: LugarFilaBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
 
+
         fun dibuja(lugar: Lugar) {
             itemBinding.tvNombre.text = lugar.nombre
             itemBinding.tvCorreo.text = lugar.correo
